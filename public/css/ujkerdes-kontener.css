@@ -1,0 +1,37 @@
+.ujkerdes-kontener {
+    font-size: 1.5em;
+    margin: auto;
+    width: 80%;
+}
+
+.ujkerdes-kontener input,
+.ujkerdes-kontener select,
+.ujkerdes-kontener textarea {
+    font-size: 1.2em;
+    padding: 0.5em;
+    width: 100%;
+}
+
+.ujkerdes-kontener textarea {
+    height: 200px;
+}
+
+.ujkerdes-kontener form {
+    width: 100%;
+}
+
+.ujkerdes-kontener form table {
+    width: 100%;
+}
+
+.ujkerdes-kontener form table tr td:first-child {
+    color: var(--feher);
+    padding: 1em;
+    text-align: right;
+    width: 250px;
+}
+
+.ujkerdes-kontener form table button {
+    font-size: 1.2em;
+    padding: 0.5em;
+}

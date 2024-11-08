@@ -1,0 +1,20 @@
+.nyito-kontener {
+    align-items: center;
+    background-color: rgb(65, 65, 65);
+    color: var(--feher);
+    display: flex;
+    flex-direction: column;
+    font-size: x-large;
+    height: 100vh;
+    justify-content: center;
+}
+
+.nyito-kontener p a {
+    color: var(--feher);
+    text-decoration: none;
+}
+
+.nyito-kontener hr {
+    margin: 1em 0px;
+    width: 200px;
+}

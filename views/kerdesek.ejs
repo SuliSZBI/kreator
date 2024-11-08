@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="/css/stilus.css"
+        />
+        <title>API - Kérdések</title>
+    </head>
+    <body>
+        <%- include('./nav.ejs') %>
+        <div class="kerdesek-kontener">
+            <% kerdesek.forEach(kerdes => { %>
+            <div class="kerdes">
+                <h4>Kérdés:</h4>
+                <p><%= kerdes.kerdes %></p>
+                <img src="<%= kerdes.kep %>" />
+                <h4>Típus:</h4>
+                <p><%= kerdes.tipus %></p>
+                <h4>Tárgy:</h4>
+                <p><%= kerdes.targy %></p>
+                <h4>Válaszok:</h4>
+                <ul>
+                    <% kerdes.valaszok.forEach(elem => { %>
+                    <li><%= elem %></li>
+                    <% }) %>
+                </ul>
+                <h4>Jó válaszok:</h4>
+                <ul>
+                    <% kerdes.joValaszok.forEach(elem => { %>
+                    <li><%= elem %></li>
+                    <% }) %>
+                </ul>
+                <div class="gombok">
+                    <div class="bal">
+                        <a href="/api/kerdes/modosit/<%= kerdes._id %>"
+                            >Módosítás</a
+                        >
+                    </div>
+                    <div class="jobb">
+                        <button onclick="torles('<%= kerdes._id%>')">
+                            Törlés
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <% }) %>
+        </div>
+        <script src="/js/kerdesek.js"></script>
+    </body>
+</html>

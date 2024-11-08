@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="hu">
+    <head>
+        <meta charset="UTF-8" />
+        <meta
+            name="viewport"
+            content="width=device-width, initial-scale=1.0"
+        />
+        <link
+            rel="stylesheet"
+            href="/css/stilus.css"
+        />
+        <title>API - Új kérdés</title>
+    </head>
+    <body>
+        <%- include('./nav.ejs') %>
+        <div class="ujkerdes-kontener">
+            <form>
+                <table>
+                    <tr>
+                        <td><label for="targy">Tárgy:</label></td>
+                        <td>
+                            <select
+                                id="targy"
+                                name="targyak"
+                            >
+                                <option value="Webszerkesztés">
+                                    Webszerkesztés
+                                </option>
+                                <option value="Python">Python</option>
+                                <option value="IT Alapok I.">
+                                    IT Alapok I.
+                                </option>
+                                <option value="IT Alapok II. (hálózat)">
+                                    IT Alapok II. (hálózat)
+                                </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="tipus">Típus:</label></td>
+                        <td>
+                            <select
+                                id="tipus"
+                                name="tipusok"
+                            >
+                                <option value="Jelölőnégyzet">
+                                    Jelölőnégyzet
+                                </option>
+                                <option value="Választógomb">
+                                    Választógomb
+                                </option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="kerdes">Kérdés:</label></td>
+                        <td>
+                            <input
+                                type="text"
+                                id="kerdes"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="valaszok">Válaszok:</label></td>
+                        <td>
+                            <textarea
+                                id="valaszok"
+                                rows="6"
+                            ></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="jovalaszok">Jó válasz(ok):</label></td>
+                        <td>
+                            <textarea
+                                id="jovalaszok"
+                                rows="4"
+                            ></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><label for="kep">Kép (url):</label></td>
+                        <td>
+                            <input
+                                type="text"
+                                id="kep"
+                            />
+                        </td>
+                    </tr>
+                    <tr>
+                        <td><button id="feldolgoz">Feldolgoz</button></td>
+                        <td></td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+        <script src="/js/ujkerdes.js"></script>
+    </body>
+</html>

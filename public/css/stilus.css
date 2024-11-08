@@ -1,0 +1,17 @@
+@import './valtozok.css';
+@import './nav.css';
+@import './nyito-kontener.css';
+@import './kerdesek-kontener.css';
+@import './ujkerdes-kontener.css';
+
+* {
+    /* border: 1px solid black; */
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: rgb(65, 65, 65);
+    font-family: var(--poppins);
+}

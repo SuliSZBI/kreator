@@ -1,0 +1,66 @@
+#szures {
+    font-size: 1.2em;
+    outline: none;
+    margin-top: 1em;
+    margin-left: 1em;
+    padding: 3px;
+}
+
+.kerdesek-kontener {
+    color: var(--feher);
+    display: grid;
+    gap: 1em;
+    grid-template-columns: repeat(2, 1fr);
+    font-size: 1.5em;
+    margin: 1em auto;
+    width: 80%;
+}
+
+.kerdesek-kontener img {
+    height: 200px;
+    object-fit: fill;
+    width: 300px;
+}
+
+.kerdes {
+    border: 1px solid var(--feher);
+    padding: 1em;
+}
+
+.kerdes h4 {
+    text-decoration: underline;
+}
+
+.kerdes ul {
+    list-style-position: inside;
+}
+
+.kerdes .gombok {
+    display: flex;
+    gap: 1em;
+    padding-top: 1em;
+}
+
+.kerdes .gombok .bal,
+.kerdes .gombok .jobb {
+    background-color: var(--feher);
+    border-radius: 5px;
+}
+
+.kerdes .gombok .bal a {
+    color: var(--szurke);
+    display: inline-block;
+    padding: 0.5em;
+    text-decoration: none;
+}
+
+.kerdes .gombok .jobb button {
+    color: var(--szurke);
+    cursor: pointer;
+    display: inline-block;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1em;
+    padding: 0.5em;
+    text-decoration: none;
+}
