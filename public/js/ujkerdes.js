@@ -12,7 +12,7 @@ feldolgoz.addEventListener('click', async (event) => {
 
     console.log(targy, tipus, kerdes, valaszok, joValaszok, kep);
 
-    const response = await fetch('/api/ujkerdes', {
+    const response = await fetch('/ujkerdes', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -31,7 +31,7 @@ feldolgoz.addEventListener('click', async (event) => {
 
     if (response.ok) {
         window.alert(valasz.msg);
-        window.location.replace('/api/kerdesek');
+        window.location.replace('/kerdesek');
     } else {
         window.alert(valasz.msg);
     }

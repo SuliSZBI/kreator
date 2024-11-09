@@ -13,7 +13,7 @@ feldolgoz.addEventListener('click', async (event) => {
 
     console.log(id, targy, tipus, kerdes, valaszok, joValaszok, kep);
 
-    const response = await fetch('/api/kerdes/modosit', {
+    const response = await fetch('/kerdes/modosit', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -33,7 +33,7 @@ feldolgoz.addEventListener('click', async (event) => {
 
     if (response.ok) {
         window.alert(valasz.msg);
-        window.location.replace('/api/kerdesek');
+        window.location.replace('/kerdesek');
     } else {
         window.alert(valasz.msg);
     }

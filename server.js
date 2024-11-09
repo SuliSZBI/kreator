@@ -10,15 +10,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.set('view engine', 'ejs');
 app.use(express.json());
 
-app.use('/api', require('./routes/mainRoutes'));
-app.use('/api/kerdesek', require('./routes/kerdesekRoutes'));
-app.use('/api/ujkerdes', require('./routes/ujKerdesRoutes'));
-app.use('/api/kerdes', require('./routes/kerdesRoutes'));
+app.use('/', require('./routes/mainRoutes'));
+app.use('/kerdesek', require('./routes/kerdesekRoutes'));
+app.use('/ujkerdes', require('./routes/ujKerdesRoutes'));
+app.use('/kerdes', require('./routes/kerdesRoutes'));
 
 dbConnection
     .then(() => {
         app.listen(PORT, () => {
-            console.log(`http://localhost:${PORT}/api`);
+            console.log(`http://localhost:${PORT}`);
         });
     })
     .catch((err) => {

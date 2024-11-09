@@ -13,7 +13,7 @@
     grid-template-columns: repeat(2, 1fr);
     font-size: 1.5em;
     margin: 1em auto;
-    width: 80%;
+    width: 90%;
 }
 
 .kerdesek-kontener img {
@@ -63,4 +63,11 @@
     font-size: 1.1em;
     padding: 0.5em;
     text-decoration: none;
+}
+
+@media screen and (max-width: 1400px) {
+    .kerdesek-kontener {
+        grid-template-columns: repeat(1, 1fr);
+        width: 90%;
+    }
 }
