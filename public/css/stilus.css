@@ -15,3 +15,19 @@ body {
     background-color: rgb(65, 65, 65);
     font-family: var(--poppins);
 }
+
+#fel-nyil {
+    color: var(--feher);
+    cursor: pointer;
+    font-size: 2em;
+    position: fixed;
+    right: 5px;
+    top: 80px;
+    user-select: none;
+}
+
+@media screen and (max-width: 700px) {
+    #fel-nyil {
+        top: 356px;
+    }
+}

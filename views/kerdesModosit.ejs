@@ -7,6 +7,10 @@
             content="width=device-width, initial-scale=1.0"
         />
         <link
+            rel="stylesheet"
+            href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+        />
+        <link
             rel="shortcut icon"
             href="/images/info-bg.png"
             type="image/x-icon"
@@ -47,12 +51,28 @@
                                 id="tipus"
                                 name="tipusok"
                             >
-                                <option value="Jelölőnégyzet">
+                                <% if (modKerdes.tipus === 'Jelölőnégyzet') { %>
+                                <option
+                                    value="Jelölőnégyzet"
+                                    selected
+                                >
                                     Jelölőnégyzet
                                 </option>
                                 <option value="Választógomb">
                                     Választógomb
                                 </option>
+                                <% } else { %>
+                                <option value="Jelölőnégyzet">
+                                    Jelölőnégyzet
+                                </option>
+                                <option
+                                    value="Választógomb"
+                                    selected
+                                >
+                                    Választógomb
+                                </option>
+
+                                <% } %>
                             </select>
                         </td>
                     </tr>
@@ -114,6 +134,7 @@
                 </table>
             </form>
         </div>
+        <script src="/js/menu.js"></script>
         <script src="/js/modKerdes.js"></script>
     </body>
 </html>
