@@ -15,6 +15,9 @@
 }
 
 .nyito-kontener hr {
+    background-color: var(--piros);
+    border: none;
+    height: 2px;
     margin: 1em 0px;
     width: 200px;
 }
