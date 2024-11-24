@@ -6,6 +6,10 @@
     padding: 3px;
 }
 
+#felfele {
+    height: 0.5em;
+}
+
 .kerdesek-kontener {
     color: var(--feher);
     display: grid;
